@@ -1,0 +1,17 @@
+h1 {
+  background-color: blueviolet;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.today-board {
+  border: 1px solid black;
+}
+
+.forecast {
+  border: 1px solid black;
+  background-color: steelblue;
+}

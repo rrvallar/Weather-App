@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Search for a City</h2>
+          <textarea name="" id="search-word" cols="30" rows="1">
+Austin</textarea
+          >
+          <button id="search-bt">Search</button>
+          <ul id="cities">
+            <!-- <li id="city-1">Austin</li>
+            <li id="city-1">Chicago</li>
+            <li id="city-3">New York</li>
+            <li id="city-4">Orlando</li>
+            <li id="city-5">San Francisco</li>
+            <li id="city-6">Seattle</li>
+            <li id="city-7">Denver</li>
+            <li id="city-8">Atlanta</li> -->
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <div class="today-board">
+            <h2 id="city-name"></h2>
+            <p id="temperature"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+            <p id="uv"></p>
+          </div>
+          <!-- Forecast including temperature wind and humidity -->
+          <div class="prediction-board">
+            <h3>5-day forecast</h3>
+            <div class="row">
+              <div class="col col-md-2 forecast">
+                <h5 id="forecast-date-1"></h5>
+                <div id="forecast-icon-1"></div>
+                <p id="forecast-temperature-1">Temperature</p>
+                <p id="forecast-wind-1">Wind</p>
+                <p id="forecast-humidity-1">Humidity</p>
+              </div>
+
+              <div class="col col-md-2 forecast">
+                <h5 id="forecast-date-2"></h5>
+                <div id="forecast-icon-2"></div>
+                <p id="forecast-temperature-2"></p>
+                <p id="forecast-wind-2"></p>
+                <p id="forecast-humidity-2"></p>
+              </div>
+
+              <div class="col col-md-2 forecast">
+                <h5 id="forecast-date-3"></h5>
+                <div id="forecast-icon-3"></div>
+                <p id="forecast-temperature-3"></p>
+                <p id="forecast-wind-3"></p>
+                <p id="forecast-humidity-3"></p>
+              </div>
+
+              <div class="col col-md-2 forecast">
+                <h5 id="forecast-date-4"></h5>
+                <div id="forecast-icon-4"></div>
+                <p id="forecast-temperature-4"></p>
+                <p id="forecast-wind-4"></p>
+                <p id="forecast-humidity-4"></p>
+              </div>
+
+              <div class="col col-md-2 forecast">
+                <h5 id="forecast-date-5"></h5>
+                <div id="forecast-icon-5"></div>
+                <p id="forecast-temperature-5"></p>
+                <p id="forecast-wind-5"></p>
+                <p id="forecast-humidity-5"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
